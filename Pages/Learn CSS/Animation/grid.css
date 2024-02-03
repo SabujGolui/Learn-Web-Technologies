@@ -1,0 +1,211 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 150px;
+    background-color: aqua;
+    border: black solid 1px;
+}
+
+.grid {
+    padding: 50px;
+    border: solid white;
+    text-align: center;
+}
+
+.grid1 {
+    animation-name: AnyGrid1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.grid2 {
+    animation-name: AnyGrid2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.grid3 {
+    animation-name: AnyGrid3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.grid4 {
+    animation-name: AnyGrid4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.grid5 {
+    animation-name: AnyGrid5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.grid6 {
+    animation-name: AnyGrid6;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.grid7 {
+    animation-name: AnyGrid7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.grid8 {
+    animation-name: AnyGrid8;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.grid9 {
+    animation-name: AnyGrid9;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes AnyGrid1 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: blue;
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: red;
+    }
+}
+
+@keyframes AnyGrid2 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: rgb(10, 172, 23);
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(13, 109, 120);
+    }
+}
+
+@keyframes AnyGrid3 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: rgb(220, 148, 14);
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(7, 91, 147);
+    }
+}
+
+@keyframes AnyGrid4 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: rgb(9, 170, 12);
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(90, 5, 59);
+    }
+}
+
+@keyframes AnyGrid5 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: rgb(184, 132, 10);
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(21, 14, 105);
+    }
+}
+
+@keyframes AnyGrid6 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: rgb(156, 37, 110);
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(152, 179, 13);
+    }
+}
+
+@keyframes AnyGrid7 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: rgb(39, 39, 79);
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(126, 192, 136);
+    }
+}
+
+@keyframes AnyGrid8 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: aqua;
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: black;
+    }
+}
+
+@keyframes AnyGrid9 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: rotate(180deg);
+        background-color: green;
+    }
+}

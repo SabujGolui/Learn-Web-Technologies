@@ -1,0 +1,109 @@
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin-left: 45%;
+    margin-top: 21%;
+    
+}
+body{
+    overflow: hidden;
+} */
+
+.box {
+    /* margin-top: 150px;*/
+    /* margin-bottom: 500px; */
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    animation-name: BoxMover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes BoxMover {
+    0% {
+        background-color: black;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: blue;
+        left: 300px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: red;
+        left: 300px;
+        top: 300px;
+    }
+
+    75% {
+        background-color: rgb(153, 8, 71);
+        left: 0px;
+        top: 300px;
+    }
+
+    100% {
+        background-color: black;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.time {
+    margin-left: 700px;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: RowMover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    transition: transform;
+    transition-duration: 3s;
+}
+
+@keyframes RowMover {
+    0% {
+        background-color: linear-gradient(red, yellow);
+        transform: rotate(0deg);
+        left: 0px;
+    }
+
+    50% {
+        background-color: yellow;
+        transform: rotate(90deg);
+        left: 300px;
+    }
+
+    100% {
+        background-color:red;
+        transform: rotate(270deg);
+        left: 0px;
+    }
+}
+
+.div1 {
+    animation-timing-function: linear;
+}
+
+.div2 {
+    animation-timing-function: ease;
+}
+
+.div3 {
+    animation-timing-function: ease-in;
+}
+
+.div4 {
+    animation-timing-function: ease-out;
+}
+
+.div5 {
+    animation-timing-function: ease-in-out;
+}

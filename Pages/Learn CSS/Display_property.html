@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        /* margin: 10px; */
+        position: relative;
+      }
+
+      .div1 {
+        animation-name: IndexValue1;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+      }
+      .div2 {
+        margin-left: 50px;
+        margin-top: -50px;
+        animation-name: IndexValue2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      .div3 {
+        margin-left: 100px;
+        margin-top: -50px;
+        animation-name: IndexValue3;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes IndexValue1 {
+        0% {
+          z-index: 3;
+        }
+        50% {
+          z-index: 3;
+        }
+        100% {
+          z-index: 1;
+        }
+      }
+      @keyframes IndexValue2 {
+        0% {
+          z-index: 1;
+        }
+        50% {
+          z-index: 2;
+        }
+        100% {
+          z-index: 2;
+        }
+      }
+      @keyframes IndexValue3 {
+        0% {
+          z-index: 1;
+        }
+        50% {
+          z-index: 1;
+        }
+        100% {
+          z-index: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1" style="background-color: blue"></div>
+    <div class="div2" style="background-color: red"></div>
+    <div class="div3" style="background-color: yellow"></div>
+  </body>
+</html>
