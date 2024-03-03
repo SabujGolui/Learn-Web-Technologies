@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let funn = () => {
+      //     var a = 10;
+      //     console.log(a);
+      //   };
+      //   funn();
+
+      //   function one() {
+      //     var a = 10;
+      //     console.log(a);
+      //     function two() {
+      //       var b = 20;
+      //       console.log(b);
+      //       function three() {
+      //         var c = 30;
+      //         console.log(c);
+      //       }
+      //       three();
+      //     }
+      //     two();
+      //   }
+      //   one();
+      var b = 10;
+      let a = () => {
+        var b = 20;
+        console.log(b);
+        console.log(this.b);
+      };
+      a();
+
+      let math = (a, b) => {
+        let c = a + b;
+        return "the ans id : " + c;
+      };
+
+      console.log(math(12, 13));
+    </script>
+  </body>
+</html>
