@@ -1,0 +1,104 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    background-color: steelblue;
+    height: 80px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0px 40px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ul {
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.items {
+    color: rgb(251, 250, 250);
+    padding: 10px;
+}
+
+.items:hover {
+    background-color: yellow;
+    border-radius: 10px;
+    color: black;
+}
+
+.login {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.login:hover {
+    border-bottom: 2px solid white;
+}
+
+.checkbox {
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+
+.checkbox:hover {
+    color: wheat;
+}
+
+#checkbox {
+    display: none;
+}
+
+a:hover {
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 832px) {
+
+    .checkbox {
+        display: block;
+    }
+
+    ul {
+        padding-top: 50px;
+        background-color: grey;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        position: fixed;
+        left: -100%;
+        transition: all 1s;
+    }
+
+    li {
+        display: block;
+    }
+
+
+
+    #checkbox:checked~ul {
+        left: 0;
+        transition: all 2s;
+        width: 40%;
+    }
+}
