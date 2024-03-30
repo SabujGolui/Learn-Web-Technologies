@@ -29,14 +29,57 @@
       // console.log(Math.floor(12354.33));
       // console.log(Math.random()*1000);
 
+      // let date = new Date();
+      // console.log(date.getDate());
+      // console.log(date.getDay());
+      // console.log(date.getFullYear());
+      // console.log(date.getMinutes());
+      // console.log(date.getSeconds());
+      // console.log(date.getMilliseconds());
 
-      let date = new Date();
-      console.log(date.getDate());
-      console.log(date.getDay());
-      console.log(date.getFullYear());
-      console.log(date.getMinutes());
-      console.log(date.getSeconds());
-      console.log(date.getMilliseconds());
+      // Object.create()
+      const obj = {
+        log1: function () {
+          console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+        },
+      };
+
+      const hggf = obj;
+      hggf.name = "Qspider";
+      hggf.isHuman = true;
+      hggf.log1();
+
+      const me = Object.create(obj);
+      me.name = "Qspider";
+      me.isHuman = true;
+      me.log1();
+
+      // Object.assign
+
+      const source = { b: 4, c: 5 };
+      const target = { a: 1, b: 2 };
+
+      const returnedTarget = Object.assign(source, target);
+
+      console.log(source);
+      // Expected output: Object { a: 1, b: 4, c: 5 }
+
+      console.log(returnedTarget === source);
+      // console.log(source === target);
+
+      // isfrozen
+
+      const object1 = {
+        property1: 42,
+      };
+
+      console.log(Object.isFrozen(object1));
+      // Expected output: false
+
+      Object.freeze(object1);
+
+      console.log(Object.isFrozen(object1));
+      // Expected output: true
     </script>
   </body>
 </html>
