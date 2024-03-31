@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <table>
+        <tr>
+          <td>
+            <label for="">Username</label>
+          </td>
+          <td>
+            <input type="text" name="" id="Username" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Password</label>
+          </td>
+          <td>
+            <input type="text" name="" id="Password" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Email</label>
+          </td>
+          <td>
+            <input type="text" name="" id="Email" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Phone</label>
+          </td>
+          <td>
+            <input type="text" name="" id="Phonec" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">City</label>
+          </td>
+          <td>
+            <input type="text" name="" id="City" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">State</label>
+          </td>
+          <td>
+            <input type="text" name="" id="State" />
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="GenereteTable()">Submit</button></td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function GenereteTable() {
+        let inputData = document.querySelectorAll("input");
+        let obj = {
+          Username: inputData[0].value,
+          Password: inputData[1].value,
+          Email: inputData[2].value,
+          Phone: inputData[3].value,
+          City: inputData[4].value,
+          State: inputData[5].value,
+        };
+        TableCreated(obj);
+      }
+
+      function TableCreated(item) {
+        let table = document.createElement("table");
+        table.style.border = "1px solid";
+        let tr1 = document.createElement("tr");
+        let tr2 = document.createElement("tr");
+        let tr3 = document.createElement("tr");
+
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        let td3 = document.createElement("td");
+        let td4 = document.createElement("td");
+        let td5 = document.createElement("td");
+        let td6 = document.createElement("td");
+
+        td1.innerText = "Username : " + item.Username;
+        td1.style.border = "1px solid black";
+        td1.style.fontSize = "20px";
+        td2.innerText = "Password: " + item.Password;
+        td2.style.fontSize = "20px";
+        td2.style.border = "1px solid black";
+        td2.style.padding = "10px";
+
+        td3.innerText = "Email : " + item.Email;
+        td3.style.fontSize = "20px";
+        td3.style.border = "1px solid black";
+        td3.style.padding = "10px";
+        td4.innerText = "Phone : " + item.Phone;
+        td4.style.fontSize = "20px";
+        td4.style.border = "1px solid black";
+        td4.style.padding = "10px";
+
+        td5.innerText = "City : " + item.City;
+        td5.style.fontSize = "20px";
+        td5.style.border = "1px solid black";
+        td5.style.padding = "10px";
+        td6.innerText = "State : " + item.State;
+        td6.style.fontSize = "20px";
+        td6.style.border = "1px solid black";
+        td6.style.padding = "10px";
+
+        tr1.appendChild(td1);
+        tr1.appendChild(td2);
+        tr2.appendChild(td3);
+        tr2.appendChild(td4);
+        tr3.appendChild(td5);
+        tr3.appendChild(td6);
+
+        table.appendChild(tr1);
+        table.appendChild(tr2);
+        table.appendChild(tr3);
+
+        document.body.appendChild(table);
+      }
+    </script>
+  </body>
+</html>

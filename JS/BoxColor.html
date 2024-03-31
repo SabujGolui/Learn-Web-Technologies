@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      margin: 50px;
+      border: 1px solid black;
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+  <body>
+    <center>
+      <div class="box" id="ColorBox"></div>
+      <br /><br />
+      <center>
+        <input onkeyup="Changecolor()" type="text" />
+      </center>
+    </center>
+
+    <script>
+      let inputvalue = document.querySelector("input");
+      let box = document.querySelector("div");
+      function Changecolor() {
+        box.style.backgroundColor = inputvalue.value;
+      }
+    </script>
+  </body>
+</html>

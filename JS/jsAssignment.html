@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <label for="" id="CountLable">0</label>
+      <br /><br />
+
+      <button id="btninc" onclick="CountInc()">Increase</button>
+      <button id="btndec" onclick="CountDec()">Decrease</button>
+      <button id="btnre" onclick="CountRes()">Reset</button>
+    </center>
+
+    <script>
+      let lableValue = document.querySelector("label");
+      let count = 0;
+      function CountInc() {
+        count++;
+        lableValue.textContent = count;
+        lableValue.style.color = "red";
+      }
+      function CountDec() {
+        if (count != 0) {
+          count--;
+        }
+        lableValue.textContent = count;
+        lableValue.style.color = "green";
+      }
+      function CountRes() {
+        count = 0;
+        lableValue.textContent = count;
+      }
+    </script>
+  </body>
+</html>
