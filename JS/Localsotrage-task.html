@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">Enter Username</label>
+    <input type="text" id="username" /> <br />
+    <br />
+    <button onclick="Save()">Save</button> <br /><br />
+
+    <button onclick="fetch()">Fetch Data</button> <br> <br>
+
+    <script>
+      function Save() {
+        let username = document.querySelector("#username");
+        window.localStorage.setItem("username", username.value);
+      }
+      function fetch() {
+        username = window.localStorage.getItem("username");
+        let label = document.createElement("label");
+        label.innerText = "Your Username is : " + username;
+        document.body.appendChild(label);
+      }
+    </script>
+  </body>
+</html>

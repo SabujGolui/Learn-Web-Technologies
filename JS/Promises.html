@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button onclick="ClickBtn()">Click</button>
+    <script>
+      var promisestate = false;
+      let ClickBtn = () => {
+        if (promisestate) {
+          promisestate = false;
+        } else {
+          promisestate = true;
+        }
+
+        let promise = new Promise((resolve, reject) => {
+          if (promisestate) {
+            resolve((document.body.style.backgroundColor = "green"));
+          } else {
+            reject((document.body.style.backgroundColor = "black"));
+          }
+        });
+
+        promise
+          .then(() => {
+            console.log("Yes");
+          })
+          .catch(() => {
+            console.log("no");
+          });
+      };
+    </script>
+  </body>
+</html>

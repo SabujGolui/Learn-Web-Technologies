@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" onsubmit="return Validate()">
+      <label>Username</label>
+      <input type="text" name="Username" id="Password" placeholder="Enter Username" />
+      <br /><br />
+      <label>Password</label>
+      <input
+        type="text"
+        name="Password"
+        id="Username"
+        placeholder="Enter Password"
+      /><br /><br />
+
+      <button>Submit</button>
+    </form>
+    <script>
+      function Validate() {
+        let Username = document.querySelector("#Username");
+        let Password = document.querySelector("#Password");
+        // console.log(Username,Password);
+        if (Username.value == "") {
+          alert("Please enter a username");
+          return false;
+        } else if (Password.value == null) {
+          alert("Please enter a password");
+          return false;
+        } else if (Password.value.length < 4) {
+          alert("Please enter a valid password");
+          return false;
+        } else {
+          alert("success");
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>
